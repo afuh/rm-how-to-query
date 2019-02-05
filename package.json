@@ -1,0 +1,19 @@
+{
+  "name": "query-rm",
+  "dependencies": {
+    "apollo-boost": "^0.1.20",
+    "gatsby": "^2.0.19",
+    "gatsby-source-graphql": "^2.0.4",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.5.1",
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.5.1",
+    "rickmortyapi": "^0.2.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "serve": "gatsby serve"
+  }
+}
