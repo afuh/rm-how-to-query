@@ -25,7 +25,7 @@ plugins: [
 import ApolloClient from 'apollo-boost'
 import fetch from 'isomorphic-fetch'
 
-const client = new ApolloClient({
+export const client = new ApolloClient({
   uri: 'https://rickandmortyapi.com/graphql',
   fetch
 })
@@ -37,7 +37,7 @@ const client = new ApolloClient({
 import React from 'react'
 import { ApolloProvider } from 'react-apollo'
 
-import client from './apolloClient'
+import { client } from './apolloClient'
 
 export const wrapRootElement = ({ element }) => (
   <ApolloProvider client={client}>{element}</ApolloProvider>
