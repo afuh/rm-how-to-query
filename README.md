@@ -1,6 +1,6 @@
 # Different ways to query The Rick and Morty API (or any api) in Gatsby
 
-### gatsby-source-graphql (build time)
+### [gatsby-source-graphql](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) (build time)
 
 ```js
 // gatsby-config.js
@@ -17,7 +17,7 @@ plugins: [
 ]
 ```
 
-### Apollo
+### [Apollo Client](https://github.com/apollographql/apollo-client)
 
 ```js
 // apolloClient.js
@@ -98,7 +98,7 @@ const res = await fetch('https://rickandmortyapi.com/api/character/1')
 const data = await res.json()
 ```
 
-### The Rick and Morty JS Wrapper
+### [The Rick and Morty JS Wrapper](https://github.com/afuh/rick-and-morty-api-node)
 
 ```js
 import { getCharacter } from 'rickmortyapi'
